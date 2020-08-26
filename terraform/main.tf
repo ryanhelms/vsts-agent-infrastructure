@@ -1,6 +1,7 @@
 resource "azurerm_resource_group" "aci-rg" {
   name     = "aci-vsts"
-  location = "westus2"
+  location = "eastus"
+  default  = "Enumis-Global-Build"
 }
 
 resource "random_id" "randomId" {
